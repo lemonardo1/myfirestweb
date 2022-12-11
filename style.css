@@ -1,0 +1,14 @@
+h1 {text-align: center;
+    border-bottom: 2px solid gray;
+    padding-bottom:20px;}
+
+#grid {display: grid;
+    grid-template-columns: 1fr 2fr;}
+
+ol {border-right:2px solid gray;
+    margin-right:40px;
+    padding-right:20px;}
+  
+  @media(max-width:700px){
+    #grid{display:block;}
+    ol{border-right:none;}}
