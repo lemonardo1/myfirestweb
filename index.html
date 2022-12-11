@@ -1,11 +1,20 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - Welcome</title>
+  <title>HOMEPAGE - Welcome</title>
   <meta charset="utf-8">
+  <style>
+    h1 {text-align: center;}
+    #grid {display: grid;
+    grid-template-columns: 1fr 1fr;
+    border:2px solid gray;}
+
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
+  
+  <h1><a href="index.html">HOMEPAGE</a></h1>
+  <div id="grid">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -13,11 +22,11 @@
     <li><a href="osteoporosis.html">골다공증</a></li>
     <li><a href="box.html">box</a></li>
     <li><a href="grid.html">grid</a></li>
+    <li><a href="피부병변의 대분류.html">피부병변의 대분류</a></li>
   </ol>
-  <h2>WEB</h2>
   <p>안녕하세요. 김대성의 website에 오신 것을 환영합니다. 여기서는 의학적인 내용과 컴퓨터 프로그래밍의 내용을 함께 찾아보실 수 있습니다.</p>
   </p>
-
+</div>
   <p>
     this is my website : <a href="https://www.lemonaa.online" target="_blank">lemonaa.online</a>
     </p>
@@ -33,10 +42,19 @@
     <p>
       <input type="submit" value="제출">
     </p>
-    <script>function alartDialogBox(){
-      alart("확인버튼을 눌러보세요.")
+    <br>
+    <br>
+    <hr>
+    <br>
+    <p>아래는 자바스크립트로 작성하였습니다.</p>
+    <button onclick="printDate()">현재 시간과 날짜</button>
+    <p id="date"></p>
+    <script>function printDate(){
+      document.getElementById("date").innerHTML=Date();
     }
     </script>
+
+    
   </form>
 </body>
 </html>
