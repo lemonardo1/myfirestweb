@@ -4,6 +4,15 @@
   <title>HOMEPAGE - Welcome</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>function printDate(){
+    document.getElementById("date").innerHTML=Date();
+  }
+
+  function printName(){
+    const name = document.getElementById("number").value;
+    document.getElementById("result").innertext = name;
+  }
+  </script>
 </head>
 <body>
   
@@ -41,10 +50,7 @@
     <p>아래는 자바스크립트로 작성하였습니다.</p>
     <button onclick="printDate()">현재 시간과 날짜</button>
     <p id="date"></p>
-    <script>function printDate(){
-      document.getElementById("date").innerHTML=Date();
-    }
-    </script>
+    
 
 <hr>
   </form>
@@ -52,33 +58,16 @@
   <input type="button" value="hi" onclick="alert('hi')">
   <input type="text" onchange="alert('changed')">
   <input type="text" onkeydown="alert('key down')">
+
+
+  <div>
+    <p>
+      입력해주세요.
+      <input id='name' onchange='printName()'/>
+      <div id='result'></div>
+    </p>
+  </div>
 <hr>
-<div id="app">
-
-<script>
-  const { 
-    React: {useState, useRef, useEffect, Fragment},
-  ReactDOM: { render },
-  gsap: { 
-    set, 
-    to, 
-    timeline,
-    utils: {random} } } =
-  
-  window;
-  const rootNode = 
-  document.getElementById('app');
-  const armLimit = random(0,3);
-  const headLimit = random(armLimit + 1, armLimit + 3);
-  const angerLimit = random(headLimit + 1, headLimit + 3);
-  const armDuration = 0.2;
-  const bearDuration = 0.25;
-  const checkboxDuration = 0.25;
-  const pawDuration = 0.1;
-
-  
-
-</script>
 
 </body>
 </html>
