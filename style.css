@@ -1,3 +1,13 @@
+
+body {background-image: 
+    linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;}
+
 h1 {text-align: center;
     border-bottom: 2px solid gray;
     padding-bottom:20px;
@@ -16,3 +26,6 @@ ol {border-right:2px solid gray;
 
 
 p {display:flex;}
+
+
+/* Path: index.html */
