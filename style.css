@@ -27,5 +27,13 @@ ol {border-right:2px solid gray;
 
 p {display:flex;}
 
+#button1 {color:aqua;
+    background-color: black;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;}
+
 
 /* Path: index.html */
