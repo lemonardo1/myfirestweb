@@ -5,7 +5,13 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <script>function printDate(){
-    document.getElementById("date").innerHTML=Date();
+    document.getElementById("date").innerHTML=Date()
+    
+    function calculatorPlus(){
+      var num1 = document.getElementById("num1").value;
+      var num2 = document.getElementById("num2").value;
+      var result = Number(num1) + Number(num2);
+      document.getElementById("result").textContent = result;
   }
 
   function printName(){
@@ -45,20 +51,22 @@
     <p>
       <input type="submit" value="제출">
     </p>
-    <br>
-    <br>
+    <div>
+      <br><br>
     <p>아래는 자바스크립트로 작성하였습니다.</p>
     <button onclick="printDate()">현재 시간과 날짜</button>
     <p id="date"></p>
+  </div>
     
 
 <hr>
   </form>
   <!--event 연습해보기 : onclick, onchange, onkeydown-->
+  <div>
   <input type="button" id="button1" value="hi" onclick="alert('hi')">
   <input type="text" onchange="alert('changed')">
   <input type="text" onkeydown="alert('key down')">
-
+</div>
 
   <div>
     <p>
@@ -66,6 +74,17 @@
       <input id='name' onchange='printName()'/>
       <div id='result'></div>
     </p>
+  </div>
+  <div>
+    <h2> 덧셈 계산기</h2>
+    <p>
+      <input type="text" id="num1" value="0"> 
+      +
+      <input type="text" id="num2" value="0"> 
+      =
+      <p id="result">0</p>
+      <button id="calculate" type="button" onclick="calculatorPlus()">계산하기</button>   
+  </p>  
   </div>
 <hr>
 
