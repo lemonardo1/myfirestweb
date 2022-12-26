@@ -6,12 +6,13 @@
   <link rel="stylesheet" href="style.css">
   <script>function printDate(){
     document.getElementById("date").innerHTML=Date()
+  }
     
     function calculatorPlus(){
       var num1 = document.getElementById("num1").value;
       var num2 = document.getElementById("num2").value;
       var result = Number(num1) + Number(num2);
-      document.getElementById("result").textContent = result;
+      document.getElementById("resultCal").textContent = result;
   }
 
   function printName(){
@@ -33,6 +34,7 @@
     <li><a href="grid.html">grid</a></li>
     <li><a href="피부병변의 대분류.html">피부병변의 대분류</a></li>
     <li><a href="공부내용 정리 by newt.html">공부내용 정리 by newt</a></li>
+    <li><a href="2019191026김대성-기초신경과학-신경해부 실습평가.html">기초신경과학 실습평가</a></li>
   </ol>
   <p>안녕하세요. 김대성의 website에 오신 것을 환영합니다. 여기서는 의학적인 내용과 컴퓨터 프로그래밍의 내용을 함께 찾아보실 수 있습니다.</p>
   </p>
@@ -82,8 +84,8 @@
       +
       <input type="text" id="num2" value="0"> 
       =
-      <p id="result">0</p>
-      <button id="calculate" type="button" onclick="calculatorPlus()">계산하기</button>   
+      <p id="resultCal">0</p>
+      <button id="calculate" type="button" accesskey="1" onclick="calculatorPlus()">계산하기 (alt+1)</button>   
   </p>  
   </div>
 <hr>
