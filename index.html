@@ -37,17 +37,17 @@
     <li><a href="2019191026김대성-기초신경과학-신경해부 실습평가.html">기초신경과학 실습평가</a></li>
     <li><a href="calculator.html">calculator</a></li>
     <li><a href="behcet.html">behcet disease</a></li>
+    <li><a href="acute abdominal pain/AAP.html"></a></li>
   </ol>
   <p>안녕하세요. 김대성의 website에 오신 것을 환영합니다. 여기서는 의학적인 내용과 컴퓨터 프로그래밍의 내용을 함께 찾아보실 수 있습니다.</p>
   </p>
 </div>
-  <p>
+<div>
+  <div>
+    <p>
     this is my website : <a href="https://www.lemonaa.online" target="_blank">lemonaa.online</a>
     </p>
-  
-  <p>2022. 12. 11. 9am - grid 내용 추가</p>
-
-  <form>
+    <p>2022. 12. 11. 9am - grid 내용 추가</p>
     <p>
       <strong>이름</strong>
       <input type="text" name="name" value="이름 입력">
@@ -56,30 +56,29 @@
       <input type="submit" value="제출">
     </p>
     <div>
-      <br><br>
-    <p>아래는 자바스크립트로 작성하였습니다.</p>
-    <button onclick="printDate()">현재 시간과 날짜</button>
-    <p id="date"></p>
-  </div>
-    
+      <br>
+      <br>
+      <p>아래는 자바스크립트로 작성하였습니다.</p>
+      <button onclick="printDate()">현재 시간과 날짜</button>
+      <p id="date"></p>
+    </div>
+</div>
 
-<hr>
-  </form>
   <!--event 연습해보기 : onclick, onchange, onkeydown-->
+<div>
   <div>
   <input type="button" id="button1" value="hi" onclick="alert('hi')">
   <input type="text" onchange="alert('changed')">
   <input type="text" onkeydown="alert('key down')">
-</div>
-
-  <div>
+  </div>
+  <div id="이름 입력 받은 버튼">
     <p>
       입력해주세요.
       <input id='name' onchange='printName()'/>
       <div id='result'></div>
     </p>
   </div>
-  <div>
+  <div id="덧셈 계산기">
     <h2> 덧셈 계산기</h2>
     <p>
       <input type="text" id="num1" value="0"> 
@@ -90,7 +89,15 @@
       <button id="calculate" type="button" accesskey="1" onclick="calculatorPlus()">계산하기 (alt+1)</button>   
   </p>  
   </div>
+</div>
 <hr>
+
+
+<div id="버튼 연습하기">
+  <h2>버튼 연습하기 1월 2일</h2>
+  <input type="button" id="button2" value="changecolor" 
+  onclick="document.querySelector('body').style.backgroundColor = 'Black'; ">
+</div>
 
 </body>
 </html>
