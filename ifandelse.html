@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>if and else</h1>
+        <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (document.querySelector('#night_day').value == 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            document.querySelector('#night_day').value = 'day';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            document.querySelector('#night_day').value = 'night';
+        }
+        ">
+
+        <h2>document</h2>
+        <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value == 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day';
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night';
+        }
+        ">
+    </body>
+</html> 
